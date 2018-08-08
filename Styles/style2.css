@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great%7CGudea:700');
+/* GOOGLE FONTS */
+
+/* font-family: 'Fredericka the Great', cursive; */
+
+/* font-family: 'Gudea', sans-serif; */
+
+/* COLOR PALETTE */
+
+/* https://coolors.co/36151e-839791-593f62-e3b23c-edebd7 */
+
+:root {
+  --primaryDark: #36151E;
+  --primaryLight: #EDEBD7;
+  --accent: #E3B23C;
+  --alternate: #593F62;
+  --addedPadding: 10px;
+}
+
+html,
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-image:url("https://img00.deviantart.net/9588/i/2011/362/6/b/nsync_wallpaper_by_sailortrekkie92-d4ki3e1.png");
+  background-size: cover;
+}
+
+h1,
+label,
+#submitButton {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
+  justify-content:flex-end
+}
+h1 {
+  font-size: 45px;
+  color: var(--accent);
+  text-align: center;
+}
+
+.userContainer {
+  margin: 20px 0 40px 0;
+  width: 50%;
+  height:500px;
+  border: 4px solid #4182f4;
+  border-radius:45px;
+  background-color: whitesmoke;
+}
+
+label {
+  font-size: 1.3em;
+  color: var(--primaryDark);
+}
+
+input {
+  font-size: 1.3em;
+  background: none;
+  border: unset;
+  border-bottom: var(--alternate) 2px solid;
+  caret-color: var(--accent);
+  color: var(--alternate);
+}
+
+input:focus {
+  outline: none;
+}
+
+.userContainer {
+  padding: var(--addedPadding);
+}
+#content {
+   height:300px;
+   font-family: Times New Roman, Times, serif;
+   font-size:23px;
+   background-color: whitesmoke;
+}
+form,
+.inputContainer,
+.singleInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+form {
+  grid-template: auto/1fr auto;
+}
+
+.inputContainer {
+  grid-template: auto auto/auto;
+}
+
+.singleInput {
+  grid-template: auto/auto 5fr;
+}
+
+#submitButton {
+  background-color:#42f468;
+  font-size: 1.3em;
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+  cursor: pointer;
+
+}
+
+#submitButton:hover {
+  background-color: #41f4df;
+}
+
+#submitButton:focus {
+  outline-style: none;
+  outline-width: 2px;
+  outline-color: var(--primarydark);
+}

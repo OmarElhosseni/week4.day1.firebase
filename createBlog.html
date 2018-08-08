@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD4cfttg_HORjzkQsBQ39rlE-9aYY7iCvA",
+        authDomain: "akboblogging.firebaseapp.com",
+        databaseURL: "https://akboblogging.firebaseio.com",
+        projectId: "akboblogging",
+        storageBucket: "",
+        messagingSenderId: "582835073253"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="Javascript/database.js" defer></script>
+  <link rel="stylesheet" href="Styles/style2.css">
+</head>
+<body>
+  <!--For user to input messages-->
+  <div class="userContainer">
+      <form>
+          <div class="inputContainer">
+              <div class="singleInput">
+                  <label for="username">Author:</label>
+                  <input id="author" type="text">
+              </div>
+              <div class="singleInput">
+                  <label for="message">Blog Title:</label>
+                  <input id="title" type="text">
+              <div class="singleInput">
+                  <label for="message">Content:</label>
+                  <textarea rows="4" cols="50" id = "content" type = "text"></textarea>
+              </div>
+              </div>
+          </div>
+          <button id="submitButton">Submit</button>
+      </form>
+  </div>
+</body>
+</html>

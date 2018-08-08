@@ -1,0 +1,29 @@
+header{
+   background-color: darkblue;
+   padding:50px;
+   font-size: 55px;
+   color:white;
+   margin-bottom: 20px;
+}
+body{
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   font-family: 'Signika', sans-serif;
+   overflow-y: scroll;
+   background-image:url("https://img00.deviantart.net/9588/i/2011/362/6/b/nsync_wallpaper_by_sailortrekkie92-d4ki3e1.png");
+   background-size: cover;
+}
+div{
+   background-color:whitesmoke;
+   border-width: 5px;
+   border-style: solid;
+   margin:20px;
+   border-radius: 10px;
+   padding: 50px;
+   opacity: 0.5;
+}
+button{
+   float:right;
+   margin:20px;
+}
