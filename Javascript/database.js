@@ -46,7 +46,13 @@ database.on('child_added', function(rowData){
   newDiv.appendChild(heading);
   newDiv.appendChild(post);
 
+  const oldDiv = document.getElementById('bodyM').innerHTML;
+
   const bodyM = document.getElementById('bodyM');
+
+  bodyM.innerHTML = '';
+
   bodyM.appendChild(newDiv);
+  bodyM.appendChild(oldDiv);
 
 })
